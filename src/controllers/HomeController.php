@@ -1,12 +1,15 @@
 <?php
 
-require_once("src/controllers/BaseController.php");
-require_once("src/models/UserModel.php");
+namespace App\controllers;
+use App\controllers\BaseController;
+use App\models\TodoModel;
 
 class HomeController extends BaseController{
   public function index(){
-    $userModel = new UserModel();
-    $users = $userModel->getUsers();
-    $this->view("home", ["message" => "Hello World", "users" => $users]);
+    $todoModel = new TodoModel();
+    $todos = $todoModel->getTodos();
+
+    var_dump($todos);
+    $this->view("home", ["message" => "Hello World"]);
   }
 }

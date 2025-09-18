@@ -1,8 +1,11 @@
 <?php
 
+namespace App\database;
+use PDO;
+
 class Database{
   private $host = "localhost";
-  private $db_name = "usersudemy";
+  private $db_name = "todos";
   private $username = "root";
   private $password = "DimPfmS19022001";
   private $conn;
