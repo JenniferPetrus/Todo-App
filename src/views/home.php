@@ -7,5 +7,9 @@
 </head>
 <body>
   <h1><?php echo $message ?></h1>
+
+  <?php
+  var_dump($users);
+  ?>
 </body>
 </html>

@@ -4,7 +4,7 @@ class Database{
   private $host = "localhost";
   private $db_name = "usersudemy";
   private $username = "root";
-  private $password = "";
+  private $password = "DimPfmS19022001";
   private $conn;
 
   public function getConnection(){

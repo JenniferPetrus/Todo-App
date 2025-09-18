@@ -2,7 +2,7 @@
 
 require_once("src/database/Database.php");
 
-class Basemodel{
+class BaseModel{
   protected $conn;
 
   public function __construct(){
