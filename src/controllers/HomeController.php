@@ -10,10 +10,14 @@ class HomeController extends BaseController{
     $todoModel = new TodoModel();
     $todos = $todoModel->getTodos();
 
-    $CardObject = new TodoCard;
-    $card = $CardObject->createCard();
+    $cards = [];
 
-    var_dump($todos);
-    $this->view("home", ["message" => "Hello World", "card" => $card]);
+    foreach($todos as $todo){
+      $CardObj = new TodoCard($todo["name"], $todo["status"], $todo["descr"], $todo["id"]);
+      $card = $CardObj->createCard();
+      array_push($cards, $card);
+    }
+    
+    $this->view("home", ["message" => "Hello World", "cards" => $cards]);
   }
 }
