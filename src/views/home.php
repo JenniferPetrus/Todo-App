@@ -7,14 +7,18 @@
   <link rel="stylesheet" href="src/views/home.css?v=1.0">
 </head>
 <body>
-  <h1><?php echo $message ?></h1>
 
+  <div>
 
-  <form action="" method="post">
-    <input type="text" name="name" id="title" placeholder="Todo Title">
-    <input type="text" name="desc" id="description" placeholder="What todo?">
-    <button type="submit" name="create">Create</button>
-  </form>
+    <h1>MY TODOS</h1>
+    <form action="" method="post">
+      <input type="text" name="name" id="title"required placeholder="Todo Title">
+      <input type="text" name="desc" id="description"required placeholder="What todo?">
+      <button type="submit" name="create">Create</button>
+    </form>
+
+  </div>
+
 
   <div class="card-container">
     <?php

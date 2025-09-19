@@ -47,6 +47,6 @@ class HomeController extends BaseController{
           array_push($cards, $card);
       }
 
-      $this->view("home", ["message" => "Todo successfully created!", "cards" => $cards]);
+      $this->view("home", ["cards" => $cards]);
   }
 }
