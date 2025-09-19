@@ -17,7 +17,6 @@ enum TaskStatus: int{
 }
 
 class TodoCard{
-
   // title, status, desc, id
   public function __construct(
     private string $title, 
@@ -28,7 +27,6 @@ class TodoCard{
       $statusEnum = TaskStatus::from($this->status);
       $this->status = $statusEnum->getLabel();
     }
-
 
   public function createCard(){
     $card = <<<CARD

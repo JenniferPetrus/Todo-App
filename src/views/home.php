@@ -9,15 +9,18 @@
 <body>
   <h1><?php echo $message ?></h1>
 
-  <div class="card-container">
+  <form action="" method="post">
+    <input type="text" name="name" id="title" placeholder="Todo Title">
+    <input type="text" name="desc" id="description" placeholder="What todo?">
+    <button type="submit">Create</button>
+  </form>
 
+  <div class="card-container">
     <?php
-      foreach ($cards as $card){
-       echo $card;
-      }
+    foreach ($cards as $card) {
+      echo $card;
+    }
     ?>
   </div>
-
-
 </body>
 </html>

@@ -6,5 +6,6 @@ use App\controllers\HomeController;
 
 $router = new Router();
 $router->add("GET", "/PHP/udemy/Todo-App/", "HomeController@index");
+$router->add("POST", "/PHP/udemy/Todo-App/", "HomeController@posttodo");
 
 $router->dispatch();
