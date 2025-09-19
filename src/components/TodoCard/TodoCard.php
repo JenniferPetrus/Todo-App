@@ -46,6 +46,13 @@ class TodoCard{
             <form action="" method="post">
               <button type="submit" name="pending" value="$this->id" class='btn-pending'>Pending</button>
             </form>
+
+
+            <form action="" method="post">
+              <button type="submit" name="delete" value="$this->id" class='btn-delete'>Delete</button>
+            </form>   
+            
+            
             <form action="" method="post">
               <button type="submit" name="done" value="$this->id" class='btn-done'>Done</button>
             </form>

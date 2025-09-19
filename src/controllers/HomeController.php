@@ -32,6 +32,9 @@ class HomeController extends BaseController{
     if(array_key_exists("create", $_POST)){
       $todoModel->insertTodo($_POST["name"], $_POST["desc"]);
     }
+    if(array_key_exists("delete", $_POST)){
+      $todoModel->deleteTodo($_POST["delete"]);
+    }
 
     $status = 0;
 

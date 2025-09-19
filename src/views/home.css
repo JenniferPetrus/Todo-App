@@ -53,6 +53,19 @@ body{
               }
             }
             .btn-pending{
+              background-color: rgb(5, 46, 158);
+              color: aliceblue;
+              border-radius: 0.625rem;
+              border: none;
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(7, 57, 196);
+              }
+              &:focus{
+                background-color: rgb(27, 75, 206);
+              }
+            }
+            .btn-delete{
               background-color: rgb(158, 5, 5);
               color: aliceblue;
               border-radius: 0.625rem;
