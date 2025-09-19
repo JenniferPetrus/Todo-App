@@ -9,10 +9,11 @@
 <body>
   <h1><?php echo $message ?></h1>
 
+
   <form action="" method="post">
     <input type="text" name="name" id="title" placeholder="Todo Title">
     <input type="text" name="desc" id="description" placeholder="What todo?">
-    <button type="submit">Create</button>
+    <button type="submit" name="create">Create</button>
   </form>
 
   <div class="card-container">

@@ -29,4 +29,16 @@ class TodoModel extends BaseModel{
       echo $e->getMessage();
     }
   }
+
+  public function updateTodo($status, $id){
+    $query = "UPDATE todos SET status = :status WHERE id = :id";
+    try {
+      $stmt = $this->conn->prepare($query);
+      $stmt->bindParam(':status', $status);
+      $stmt->bindParam(':id', $id);
+      $stmt->execute();
+    } catch (\Exception $e) {
+      echo $e->getMessage();
+    }
+  }
 }

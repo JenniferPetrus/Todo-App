@@ -52,7 +52,7 @@ body{
                 background-color: rgb(14, 153, 23);
               }
             }
-            .btn-undone{
+            .btn-pending{
               background-color: rgb(158, 5, 5);
               color: aliceblue;
               border-radius: 0.625rem;
@@ -70,4 +70,3 @@ body{
       }
     }
 }
-
